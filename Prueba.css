@@ -1,0 +1,53 @@
+#tit{
+    color:rgb(245, 167, 50);
+    text-align: center;
+    margin-top: -60px;
+}
+header{
+    background-color: rgb(78, 159, 189);
+    position: fixed;
+    width: 100%;
+    top:0%;
+    right: 0%;
+    z-index: 1000;
+}
+body{
+    background-color:beige;
+}
+/* Elimina los estilos de la lista tradicional */
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+  }
+  
+  /* Estilo para los elementos de la lista */
+  li {
+    font-size: 32px; /* Letras grandes */
+    font-weight: bold; /* Letras en negrita */
+    color: rgb(245, 167, 50); /* Color oscuro para el texto */
+    margin: 20px 0; /* Espacio entre los elementos */
+    padding: 10px 20px; /* Espacio interno alrededor del texto */
+    background-color: rgb(55, 149, 184); /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el fondo */
+  }
+  
+  /* Efecto al pasar el ratón sobre el elemento */
+  li:hover {
+    background-color: #2b4050; /* Fondo azul cuando el ratón pasa por encima */
+    color: white; /* Texto blanco */
+  }
+/* Eliminar subrayado y color azul en enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del li */
+  }
+  
+  /* Efecto hover */
+  li:hover {
+    background-color: #3498db;
+    color: white;
+  }  
