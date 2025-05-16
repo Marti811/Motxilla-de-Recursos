@@ -1,0 +1,72 @@
+body{
+    background-color:beige;
+}
+#tit{
+    color:rgb(245, 167, 50);
+    text-align: center;
+    margin-top: -60px;
+}
+header{
+    background-color: rgb(78, 159, 189);
+    position: fixed;
+    width: 100%;
+    top:0%;
+    right: 0%;
+    z-index: 1000;
+}
+#white{
+    color:rgb(78, 159, 189);
+    text-align: center;
+}
+#menuprincipal{
+    background-color:rgb(78, 159, 189);
+    color: rgb(245, 167, 50);
+    border: 2px solid rgb(37, 169, 240);
+    margin: 20px;
+    padding: 20px;
+    }
+
+    ul, li {
+        padding: 0;
+        margin: 2px ,2px;
+        display: inline-block;
+        }
+        #l1{
+            color: rgb(245, 167, 50);
+            text-decoration: none;
+            font-size: 20px;
+            
+        } 
+        #l2{
+            color: rgb(245, 167, 50);
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        #l3{
+            color: rgb(245, 167, 50);
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        #l4{
+            color: rgb(245, 167, 50);
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 40px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav li {
+            display: inline-block;
+            margin: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(245, 167, 50);
+            font-size: 20px;
+        }

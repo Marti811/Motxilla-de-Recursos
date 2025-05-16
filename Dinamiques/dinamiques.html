@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamiques</title>
+    <link rel="icon" href="LogoD.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="dinamiques.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="LogoD.png" alt="Logo Guillem Catà" width="75" height="75">
+        </div>
+        <div>
+            <h1 id="tit">Motxilla de Recursos</h1>
+        </div>
+    </header>
+    <div class="ima">
+        <img src="LogoD.png" alt="" width="50" height="50">
+    </div>
+    
+    <nav id="menuprincipal" style="text-align: center">
+        <ul>
+            <li><a id="l1" href="../Jocspresentacio/jocspresentacio.html">Jocs de Presentació</a></li>
+            <li><a id="l2" href="../Jocsconeixenca/jocsconeixenca.html">Jocs de Coneixença</a></li>
+            <li><a id="l2" href="../Jocsconfianca/jocsconfianca.html">Jocs de Confiança</a></li>
+            <li><a id="l2" href="../Jocsdetaula/jocsdetaula.html">Jocs de Taula</a></li>
+            <li><a id="l2" href="../Cancons/cancons.html">Cançons</a></li>
+            <li><a id="l2" href="#">Dinàmiques</a></li>
+            <li><a id="l2" href="../Contes/Contes.html">Contes</a></li>
+            <li><a id="l2" href="../Eixdanimacio/Eixdanimacio.html">Eix d'Animació i Tècniques per triar grups</a></li>
+            <li><a id="l3" href="../JocsCooperatius/Jocscooperatius.html">Jocs Cooperatius</a></li>
+            <li><a id="l4" href="../Jocsdecadena/Jocsdecadena.html">Jocs en Cadena</a></li>
+        </ul>
+    </nav>
+    
+    <div>
+        <h2 id="white">Dinamiques</h2>
+    </div>
+   <input type="text" id="buscador" placeholder="Cerca..." onkeyup="filtrarTaula()">
+
+    <table id="taula">
+        <tr>
+            <th>Nom de l’activitat</th>
+            <th>Nombre d’infants</th>
+            <th>Temporalització</th>
+            <th>Espai</th>
+            <th>Material</th>
+            <th>Objectius</th>
+            <th>Descripció de l'activitat</th>
+            <th>Paper de les monitores</th>
+        </tr>
+        <tr>
+            <td>Ens Coneixem?</td>
+            <td>10-20 Infants (a partir de 10 anys)</td>
+            <td>45 minuts</td>
+            <td>Exterior</td>
+            <td>Fitxes</td>
+            <td>Cohesió de grup, coneixement i fomentar la desició</td>
+            <td>A cada persona se li donarà una fitxa on haurà de completar segons els seus gustos. Desprès les barrejarem i les direm en veu alta i la resta ha d'endevinar de qui és.</td>
+            <td>L'ordre de qui parla a l'hora de dir de qui es el paper</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Com Estem en Gestos i Imitar-nos</td>
+            <td>5-15 Infants (a partir de 6 anys)</td>
+            <td>5-10 minuts</td>
+            <td>Interior / Exterior</td>
+            <td></td>
+            <td>Conèixer el grup</td>
+            <td>Ens posem en rotllana i algú comença donant una passa endavant i diu el seu nom i com està (exemple: em dic Alba i estic nerviosa), mentre diu com està ha de fer un gest, el grup ha de fer una passa endavant i repetir el que ha dit i el gest que ha fet la persona.</td>
+            <td>Que tothom faigui tots els gest i que ningú es burli de cap.</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Cercles Concèntrics</td>
+            <td>5-15 Infants (a partir de 10 anys)</td>
+            <td>8-10 minuts</td>
+            <td>Interior / Exterior</td>
+            <td></td>
+            <td>Escoltar-nos i parlar amb gran part dels nostres companys per coneixe'ns millor entre nosaltres</td>
+            <td>Es divideix el grup en dos cercles, uns quants a dins en un cercle més petit i la resta en un cercle a fora més gran, la gràcia és durant uns 3’ poder xerrar d’algun tema en concret (per exemple: que has esmorzat?) i un cop passat el temps es canvia de persona i així fins que tots s’han parlat amb tots. Al final de l’activitat es pot posar en comú les diferents preguntes per veure qui recorda que de cadascú.</td>
+            <td>Que tothom faigui tots els gest i que ningú es burli de cap.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+	<tr>
+            <td>Descriu la imatge</td>
+            <td>10-15 (preferiblement parelles) (entre 7-16 anys)</td>
+            <td>5 min</td>
+            <td>Interior / Exterior</td>
+            <td>dibuix, llapis/boli i paper</td>
+            <td>Dibuixar el mateix dibuix que em descriuen, desenvolupar l’atenció i la concentració, fomentar l’agilitat mental i la memòria</td>
+            <td>L’instructor observa el dibuix i comença a descriure’l en
+veu alta, utilitzant descripcions detallades i específiques.
+L’instructor ha d’evitar fer servir gestos o mostrar el dibuix
+al dibuixant. Per altre banda, el dibuixant escolta
+atentament les instruccions i les segueix per dibuixar el
+que entén. Pot demanar aclariments si alguna instrucció
+no és clara.
+REVISIÓ: Una vegada que el dibuix està acabat i passa
+el temps, es comparen el dibuix original i el fet pel
+dibuixant. Es discuteixen les diferències i s’analitzen les
+possibles raons per les quals han ocorregut.
+</td>
+            <td>Dinamitzar l’activitat, vigilar que no copin al del costat i que no intentin mirar la imatge.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+<tr>
+            <td>Capses d’aprenentatge</td>
+            <td>10-20 (entre 6-12 anys)</td>
+            <td>15-45 minuts</td>
+            <td>Interior/Exterior </td>
+            <td>Depèn de la capsa (papers, colors, tisores, elements naturals, jocs de taula, tecnologia bàsica...) </td>
+            <td>Potenciar l'autonomia i l'aprenentatge significatiu, fomentar la curiositat, la creativitat i la cooperació, desenvolupar competències clau a través de l’experimentació</td>
+            <td>Capsa temàtica que conté activitats diverses (retallables, 
+jocs, enigmes, reptes, materials sensorials...) 
+relacionades amb un tema central. Pot incloure 
+instruccions visuals, targetes, fulls de registre i materials 
+manipulatius. </td>
+            <td>Dinamitzar la dinàmica, introduir preguntes estimulants i 
+gestionar la dinàmica de grup </td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+<tr>
+            <td>Debat ètic</td>
+            <td>15-20 (apartir 10 anys)</td>
+            <td>30-60 min</td>
+            <td>Interior/Exterior</td>
+            <td>paper explicatiu </td>
+            <td>Fomentar el debat i respectar les opinions dels demés</td>
+            <td>Ens separem en petits grups i desprès posarem en comú 
+la conclusió de cada grup. Cada petit grup tindrà el 
+mateix paper on hi ha la següent descripció: 
+Un avió que realitzava el trajecte de Nova York - París, va 
+caure a l’oceà Atlàntic. Hi ha 15 supervivents que en 
+aquest moment es troben en una ala de l’avió. Tenen una 
+barca salvavides amb capacitat per a vuit persones. Heu 
+de posar-vos d’acord sobre les persones que se salvaran. 
+Disposeu de vint minuts per decidir abans que el que 
+queda de l’aparell s’enfonsi arrossegant-los a tots. 
+ 
+Cada grup heu de discutir i decidir quins passatgers 
+entraran a la barca. Els passatgers són:
+<ul>
+    <li>- Venedor: 56 anys. Cinc fills de nou a disset anys. Va a Bòsnia per cooperar en una missió de pau. </li>
+    <li>- Metge: 63 anys. Tres fills majors de vint-i-un anys. Es diu que ha descobert la vacuna contra el Coronavirus.</li>
+    <li>- Hostessa: 22 anys. Soltera - Músic: 34 anys. Afroamericà. Va a Europa per una gira de concerts.</li>
+    <li>- Estudiant: 22 anys. Solter. Estudia quart de medicina. Pensa exercir la seva professió en el tercer món.</li>
+    <li>- Jugador de bàsquet: És un excel·lent jugador. 32 anys, casat. Ha fitxat per la NBA. Té símptomes del coronavirus.</li>
+    <li>- Secretària: 29 anys. Està embarassada de 4 mesos.</li>
+    <li>- Agent secret: 38 anys. Divorciat amb dos fills d’11 i 8 anys. Ha memoritzat informació importantissima respecte el govern.</li>
+    <li>- Actor de cinema: 28 anys, sense família. Alguns el consideren un dels millors actors de la nova generació. </li>
+    <li>- Sacerdot: 43 anys. Destacat representant del moviment a favor dels drets humans. Va a París a rebre el premi Nobel de la Pau.</li>
+    <li>- Professora: 26 anys, soltera, amb una beca per estudiar a París. Acaba de publicar un llibre i se la considera una gran escritora.</li>
+    <li>- Ama de casa: Vidua. 73 anys. Viatja a França per complir la promesa que li va fer al seu marit abans de morir, que visitaria la llar de la seva família. El viatge li costa els estalvis de la seva vida.</li>
+    <li>- Noi de 13 anys: De família rica. Viatja a un internat a Suïssa.</li>
+    <li>- Expresidiari: 37 anys, solter. Acaba de sortir de la presó on cumplia condemna per possessió i venda de drogues. Busca situar-se en un país estranger per començar una nova vida.</li>
+    <li>- Ama de casa: 40 anys. Té dos fills de 12 i 10 anys. El marit està a l’atur i viuen del subsidi de desocupació. </li>
+</ul>
+        </td>
+            <td>Dinamitzar l’activitat i que respectin els torns de paraula.</td>
+        </tr>
+        <tr>
+            <td>    
+                <ul>
+                    <li> </li>
+                    <li> </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>El debat màgic</td>
+            <td>8-10 (entre 10-25 anys)</td>
+            <td>1h - 1h 30min</td>
+            <td>Interior/Exterior </td>
+            <td>Cartes màgiques (veure exemples més endavant), pissarra o paper gran per escriure les idees principals, cronòmetre o rellotge per controlar els temps, paper i bolígrafs per apuntar idees i preparar arguments, espai ampli per moure’s i interactuar. </td>
+            <td>Fomentar la capacitat d'expressió, argumentació i escolta activa, treballar la creativitat i la resolució de conflictes, potenciar el respecte per les idees dels altres i la construcció de arguments, fer l’activitat dinàmica, participativa i divertida. </td>
+            <td>INTRODUCCIÓ I EXPLICACIÓ 
+Explicar les regles del debat i introduir les cartes magiques.
+TEMES: 
+<ul>
+    <li>- La igualtat de gènere: Com podem assegurar que 
+tothom tingui les mateixes oportunitats?</li>
+    <li> - Els uniformes en activitats de grup: Ens ajuden a 
+sentir-nos part del grup o limiten la diversitat?</li>
+    <li> - El lideratge en els grups: Tothom hauria de liderar 
+alguna vegada?</li>
+    <li>- Les mascotes exòtiques: És ètic tenir animals 
+salvatges a casa?</li>
+    <li>- La censura en llibres, pel·lícules o videojocs: 
+Protecció o limitació de llibertats?</li>
+    <li>- Influencers a les xarxes socials: És positiu o negatiu 
+el seu impacte en els adolescents?</li>
+    <li> - TikTok i Instagram: Són una distracció o una forma 
+d’expressió útil?</li>
+    <li>- Els esports en equip: Són més importants que els 
+esports individuals? </li>
+</ul>
+
+CARTES MAGIQUES:
+<ul>
+    <li>- Contraatac: Rebat l'últim argument del teu oponent.  
+Pregunta inesperada: Fes una pregunta difícil al teu 
+opponent.</li>
+    <li>- Argument absurd: Justifica la teva postura amb un 
+exemple o argument totalment ridícul (però intenta que 
+sembli creïble!).</li>
+    <li>- Llei universal: Imagina que la teva idea es converteix 
+en una llei que tothom ha de seguir. Explica perquè 
+seria bona. </li>
+    <li>- Advocat del diable: Justifica un punt de vista contrari 
+al que realment penses.</li>
+    <li>- Exemple històric: Utilitza un fet o personatge històric 
+per recolzar el teu argument (pot ser inventat!).</li>
+    <li>- Estadística inventada: Inventa una estadística 
+sorprenent que recolza el teu punt de vista.</li>
+    <li>- Paraula prohibida: Argumenta sense utilitzar una 
+paraula clau del tema (per exemple: si el tema és 
+"mòbils", no pots dir "mòbil").</li>
+    <li>- Metàfora boja: Explica el teu punt de vista utilitzant 
+una metàfora (ex.: “Això és com intentar cuinar una 
+pizza al desert!”).</li>
+    <li>- Imitació divertida: Justifica la teva postura imitant un 
+personatge famós, un professor, o qualsevol persona 
+coneguda.</li>
+    <li>- Canta-ho!: Dona el teu argument cantant (pots fer una 
+tonada senzilla!).</li>
+    <li>- Anunci publicitari: Promociona la teva idea com si fos 
+un anunci.</li>
+    <li>- Animal argumentador: Fes veure que ets un animal 
+(per exemple, un gat) i justifica la teva opinió des del 
+punt de vista d’aquest animal. </li>
+    <li>- Idiomes: Fes servir una paraula o frase d’un altre 
+idioma durant el teu argument (i tradueix-la!).</li>
+    <li>- Argument curtíssim: Dona la teva opinió amb només 
+5 paraules.</li>
+    <li>- Al límit del temps: Tens només 10 segons per 
+defensar la teva postura.</li>
+    <li>- Silenci forçat: Escull algú del teu equip perquè no 
+pugui parlar en aquesta ronda (però ha de donar idees 
+en veu baixa!).</li>
+    <li>- Canvia de tema: Intenta girar el tema per connectar-lo 
+amb alguna altra cosa completament diferent.</li>
+    <li>- Aixeca't i mou-te: Fes el teu argument mentre 
+camines o fas algún gest (ex.: saltant com un cangur).</li>
+    <li>- Veu estranya: Parla com si fossis un robot, un 
+alienígena o qualsevol cosa rara.</li>
+    <li>- Pensa com un nen petit: Justifica la teva postura com 
+si fossis un nen/a de 5 anys.</li>
+    <li>- Desordre total: Fes el teu argument desordenant les 
+paraules (o fent veure que t’has embolicat). - Acusació falsa: Acusa l’altre equip d’alguna cosa 
+ridícula (ex.: “Volen prohibir els gelats!”) i deixa que es 
+defensin.</li>
+    <li>- Resposta amb una pregunta: Respon l’últim 
+argument amb una pregunta retòrica.</li>
+    <li>_________________________________________________________________________________________________________</li>
+    <li>DIVISIÓ EN GRUPS I ELECCIÓ DE TEMES: 
+Donar-lis uns minuts per preparar els seus arguments, tenint 
+en compte que poden utilitzar les cartes magiques durant la 
+seva intervenció.</li>
+    <li>DEBAT:
+Els equips poden utilitzar les cartes màgiques per fer els seus 
+arguments més creatius, interessants o sorprenents. Les 
+cartes es poden utilitzar en qualsevol moment del debat, i 
+s'han de complir les instruccions que indica cada carta. Cada 
+equip pot utilitzar 1 carta per torn. 
+Les participants poden fer preguntes entre ells durant la 
+ronda de resposta, però no es poden interrompre mentre algú 
+parla.  </li>
+    <li>DISCUSSIONS DE GRUP:
+Reflexionar i discutir sobre el debat de manera oberta i 
+informal. Es poden preguntar coses com: Què ha estat més 
+difícil? Quina carta et ha agradat més? Creus que algun 
+argument t’ha fet canviar d’opinió? </li>
+    <li>VOTACIÓ FINAL I AVALUACIÓÇ: 
+Avaluar qui va defensar millor el seu punt de vista, tenint en 
+compte tant els arguments com la creativitat.</li>
+</ul>    
+</td>
+            <td>Dinamitzar el grup i controlar el temps i qui parla</td>
+        </tr><tr>
+            <tr>
+            <td> </td>
+        </tr>
+            <td>Escut</td>
+            <td>5-15 (a partir 10-12 anys)</td>
+            <td>10-30 min</td>
+            <td>Interior/Exterior(No ho recomenat) </td>
+            <td>papers, bolis, retoladors, colors, llapis, goma.</td>
+            <td>Crear un espai on tothom pugui expressar-se de manera segura </td>
+            <td>Cadascú imagina i dibuixa un escut propi, és una 
+proposta completament lliure i serveix per poder conèixer 
+millor als nous companys. L’escut s’ha de dividir en tres 
+parts: la part de dalt s’ha de dibuixar un objecte que ens 
+representa, al costat esquerre un record del passat i al 
+costat dret un desig de futur; després, sense veure de qui 
+és qui, es reparteixen cap per avall a cadascú i poc a poc 
+es van destapant intentant adivinar de qui és, després 
+cadascú ha d’explicar el perquè ha dibuixat cada cosa.</td>
+            <td>dinamitzar l’activitat, ajudar a donar idees de que dibuixar i ajudar a dibuxar si es necessari.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Fem un cub</td>
+            <td>grups de 4-5 persones (entre 10-20 anys )</td>
+            <td>20 min </td>
+            <td>Interior</td>
+            <td>per grup: 1 cartolina, 1 tisores, 1 cola de barra, 1 llapis i 1 regle</td>
+            <td>Adonar-nos de la importància que té saber com 
+està el grup, identificar les diferents formes d'interactuar com a 
+“líders” amb el nostre grup </td>
+            <td>Es fa sortir 3 voluntàries (o tantes persones com grups hi 
+ha) i mentres es fan els grups de 3, 4 persones. Els grups 
+es disposen de manera separada dins l’aula per tal que 
+no interactuin entre els diferents grups. 
+Als voluntaris que han sortit se’ls explicarà que cadascú 
+d’ells tindrà un grup i se’ls hi dirà que el grup té com a 
+objectiu fer un cub (dau) de cartolina amb un temps 
+màxim de 10 minuts. Cada voluntari interactuar de 
+manera diferent. Un grup tindrà un voluntari que donen 
+ordres i no permet la participació (líder autoritari), un altre 
+col·laborarà i intenta decidir les coses en consens i 
+essent un més dins el grup (líder participatiu) i el darrer, 
+deixarà que el grup es posi d’acord i ho faci com pugui 
+(líder “deixar fer”). 
+Entres els voluntaris, es posen en grup i exposen la 
+tasca. Els grups treballen fins que s’esgota el temps. 
+A continuació es fa rotllana i s’exposa en comú 
+l’experiència viscuda. Primer es demanarà al grup com 
+s’han sentit i també es farà la mateixa pregunta als 
+voluntaris que han fet de líders.</td>
+            <td>dinamitzar l’activitat i resoldre tots els dubtes que pugin arribar a tindre</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Grups acomulatius</td>
+            <td>10-20 (entre 6-16 anys)</td>
+            <td>10-15 min</td>
+            <td>interior/exterior</td>
+            <td>paper i boli per cadascú</td>
+            <td>Treballar el treball en equip, respectar les decisions dels altres i compartir la 
+nostra </td>
+            <td>És una dinàmica on el dinamitzador, llença una pregunta 
+com ara; què t’emportaries a una illa deserta? o un tema 
+per reflexionar. Els primers minuts es reflexiona 
+individualment, quan passen aquests minuts, ens ajuntem 
+en parelles, uns minuts més tard ens ajuntem en petits 
+grups i així repetidament fins que ens ajuntem tot el grup 
+per fer una reflexió conjunta.</td>
+            <td>Controlar que en la reflexió grupal hi hagi respecte, però 
+sense intervenir si no és necessari. Deixar que el grup es 
+posi d’acord entre ells.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Girar la manta</td>
+            <td>depèn de la grandària de la manta o tela (mínim 7 anys )</td>
+            <td>5-10 minuts </td>
+            <td>Interior</td>
+            <td>manta o tela</td>
+            <td>Aconseguir girar la manta sense sortir de la manta</td>
+            <td>Depenent de la grandària de la manta/tela, ens posem 
+uns quants a sobre i hem de donar-li la volta sense 
+trepitjar el terra. </td>
+            <td>Dinamitzar l’activitat i donar alguna pista si estan molt perduts</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Dàmaris Gelabert: Massatges</td>
+            <td>10-20 (apartir de 6 anys)</td>
+            <td>5 minuts </td>
+            <td>interior/exterior </td>
+            <td><a href="https://youtu.be/2RaUhbr7Jms?feature=shared">música</a></td>
+            <td>Relaxar el cos i concentrar-nos en ell</td>
+            <td>Ens posem en rotllana però de costat, de manera que 
+ens puguem tocar l’esquena per fer un massatge mentres 
+sona una música.</td>
+            <td>Guiar als participants en l’activitat i ensenyar com es fa abans cada gest.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Passaparaula personalitzat </td>
+            <td>10-20 (mínim 8 anys)</td>
+            <td>30-45 minuts</td>
+            <td>interior/exterior</td>
+            <td>Roda de l’abecedari, Targetes o fulls, Micròfon 
+Timbre o objecte per passar el torn</td>
+            <td>Repassar o aprendre continguts de forma lúdica, fomentar la participació i l’atenció en el grup</td>
+            <td><ul>
+                <li>Formació dels equips: 
+Divideix el grup en dos equips (o més si són molts 
+participants). Cada equip triarà un portaveu que donarà 
+les respostes, tot i que poden ajudar-se entre ells. </li>
+                <li>Explicació de les normes: 
+ El dinamitzador o dinamitzadora explica que es farà un 
+“Passaparaula” on es llegiran definicions i ells hauran 
+d’endevinar la paraula correcta. Cada paraula comença 
+(o conté) una lletra concreta de l’abecedari.</li>
+                <li>Inici de la partida: 
+Es comença per la lletra A i es continua per ordre 
+alfabètic. El/la dinamitzador/a llegeix la definició 
+corresponent i l’equip ha de donar una resposta ràpida.</li>
+                <li>Passar paraula o respondre: 
+Si l’equip sap la resposta, la diu. Si no la sap o no n’està 
+segur, pot dir “passo paraula”, i es tornarà a aquella lletra 
+al final de la ronda.</li>
+                <li>Continuació de la ronda: 
+Es continua fins a arribar a la lletra Z. Després es revisen 
+totes les lletres que s’han passat per donar-los una 
+segona oportunitat.</li>
+                <li>Final de la partida i puntuació: 
+Quan ja s’han respost totes les lletres possibles, es 
+compten els encerts de cada equip. Guanya qui n’ha 
+encertat més. </li>
+            </ul></td>
+            <td>Dinamitzar i dirigir l’activitat</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Tècnica de la dutxa</td>
+            <td>tant es pot fer amb grup petit que en grup gran (mínim 6 anys)</td>
+            <td>5 min</td>
+            <td>Interior/Exterior</td>
+            <td></td>
+            <td>Despertar el cos, millorar l’estat d’ànim, afavorir la connexió entre persones</td>
+            <td>Fem una rotllana i el monitor que guia comença dient que 
+estem en una dutxa i fa els moviments simulant que 
+s’està dutxant, fregant-se les parts del cos, donant alguna 
+volta, ajupit-se per rentar-se bé els peus… fent la broma 
+de que ensabono al del costat. </td>
+            <td>Dirigir l’activitat i animar als participants</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Brossa / Rentadora / Maleta</td>
+            <td>10-20 (mínim 10 anys)</td>
+            <td>5-10 minuts </td>
+            <td>Interior/Exterior</td>
+            <td>Pissarra i retolador de pissarra o bé paper i boli</td>
+            <td>Fomentar la reflexió, detectar propostes de millores</td>
+            <td>En una pissarra s'escriuen les paraules “brossa” (no 
+tornar a repetir), “rentadora” (s’han de polir coses) i 
+“maleta” (ho tornaria a repetir). Aquesta dinàmica serveix 
+per saber l'opinió dels participants i aviam què és el que 
+ha funcionat d’aquella activitat o activitats i què no ha 
+funcionat.</td>
+            <td>Dinamitzar l' activitat i si no hi ha ningú apuntant a la pissarra fer-ho</td>
+        </tr>
+<tr>
+            <td> </td>
+        </tr>
+<tr>
+            <td>Philip 6x6</td>
+            <td>12-20 (mínim 10 anys)</td>
+            <td>6-10 minuts</td>
+            <td>Interior</td>
+            <td></td>
+            <td>Participació de tot el grup</td>
+            <td>Fer grups petits = grups de 6, durant 6 minuts. 
+Els participants es divideixen en subgrups de 6 persones 
+i han de parlar durant 6 minuts sobre un tema específic 
+per poder tenir una opinió conjunta i reflexionar en grup 
+
+<ul>
+    <li>Metodologia:</li>
+    <li>1. formació dels grups</li>
+    <li>2. organització del grup: portaveu, secretari, 
+mediador (cuida de que tothom participi)</li>
+    <li>3. treball de grup: coordinador, pendent del temps</li>
+    <li>4. posada en comú</li>
+    <li>5. creació de consens</li>
+</ul> 
+ </td>
+            <td>Guiar el grup, precisar el tema o preguntes, responsable 
+del temps, assegurar un retorn i observacions sobre la 
+participació.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Joc de les 4 cantonades</td>
+            <td>10-20 (mínim 6 anys)</td>
+            <td>5-10 minuts</td>
+            <td>Interior/exterior</td>
+            <td> Preguntes de valoració, espais decid </td>
+            <td>Fomentar la reflexió, detectar propostes de millores</td>
+            <td>Distribuïm en l’espai 4 cantonades que seran: m’agrada, 
+no m’agrada, pot millorar, indiferent. Comencem tots els 
+participants al centre i es diu la primera pregunta (ex: què 
+us ha semblat les activitats?) i els participants han d’anar 
+a la cantonada que creguin i quan es posicionin preguntar 
+el perquè. Agafar apunts de quants participants es 
+posicionen en cada lloc i poder fer un recull.</td>
+            <td>Dinamitzar l’activitat i fer reflexionar als participants</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Pedres i flors</td>
+            <td>10-20 (mínim 10 anys)</td>
+            <td>10-20 minuts</td>
+            <td>Preferiblement exterior</td>
+            <td>Papers i bolis</td>
+            <td>Conscienciar als participants de la realitat </td>
+            <td>Aquesta dinàmica no és tant per valorar una activitat en 
+concret, sinó que és per avaluar el grup d’una manera 
+més dinàmica. Es tracta de que el monitor/dinamitzador 
+escriu en uns papers coses a millorar del grup i les 
+amaguem per un espai limitat a sota de pedres o 
+d’objectes, i per altre banda en altres papers, s’escriuen 
+coses positives i les amagem també. Es tracta de que els 
+participants les trobin i les llegeixin en grup (es poden fer 
+grups petits i que després de llegir el paper trobat el 
+tornen a deixar al mateix lloc per el proper grup).</td>
+            <td>Dinamitzar l’activitat i preparar algunes pedres i flors</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Estudi d’un cas </td>
+            <td>Es pot fer tants grups com vulguem a partir de 5 
+participants. És bo que hi hagi un nombre imparell a cada 
+grup per tal de desfer empats en cas de votacions. (mínim 12 anys)</td>
+            <td>45-60 minuts </td>
+            <td>Millor en espais interiors que afavoreixin la reflexió i el 
+debat en grup</td>
+            <td>Llapis o bolígraf, Fotocòpia amb el text i l’activitat 
+posterior</td>
+            <td>Prendre consciència de les dificultats per arribar a 
+un consens quan hi ha en joc l’escala de valors 
+personals, comprovar situacions de submissió o de flexibilitat 
+en els integrants del grup </td>
+            <td>Es tracta d'una activitat on podem observar els 
+«influencers» del grup. Cal que per aplicar-la ens trobem 
+en un grup que ja es coneguin. Consisteix en debatre en 
+petit grup després de la reflexió individual sobre un 
+conegut cas que va sortir publicat a la revista francesa 
+«Elle» l'any 1965. Ja ho veieu, déu n'hi do els anys 
+que té.. i encara ens discutim. 
+(Text de l’activitat, a l’annexe) 
+Activitat: 
+Quin dels 5 personatges (la dona, el marit, l'amant, l'amic, 
+el taxista) pot ser considerat responsable de la seva 
+mort?. Classifical’s per ordre de responsabilitat decreixent 
+(descartem el boig per ser boig). Primer individualment, 
+després en petit grup i després en grup classe. 
+(full per fotocopiar i donar a tots els participants) 
+FITXA DE VALORACIÓ 
+Valora de 1 a 5 el grau de responsabilitat en la mort de la 
+protagonista (1 qui és més responsable i 5 el que menys). 
+Justifica la resposta i anomena el valor que has tingut en 
+compte per emetre el teu judici </td>
+            <td>Conduir la dinàmica</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Taller de Marcs de foto</td>
+            <td>Tot tipus de grups (de 6 a 99 anys)</td>
+            <td>30-90 minuts</td>
+            <td>Interior amb taules i cadires o al terra</td>
+            <td>Cartó prim,Cutters,
+Tisores,
+Llapis,
+Gomes,
+Regles,
+Cola,
+Grapadora i grapes,
+Cinta adhesiva o precinte,
+Pintura,
+Retoladors,
+Colors,
+Gometes,
+Retalls de papers de colors, de cartolines o de goma eva,
+Pintura,
+Pinzells,
+Altres materials decoratius (llanes, enganxines, suro, fulles, ...) i 
+Paper de diari i estris de neteja.</td>
+            <td>Fomentar la creativitat</td>
+            <td><ul>
+                <li>Pas 1. Confeccionar 3 quadrats de la mateixa mida (16 cm x 16 cm) de cartó.</li>
+                <li>Pas 2. Tallar un d’aquests quadrats que serà el frontal (amb marge de 3 cm).</li>
+                <li>Pas 3. Mida el marge i fer una forma de “U” retallant el mateix marge de 3 cm. Aquesta serà la part del marc on es recolzarà la fotografia un cop acabat el marc.</li>
+                <li>Pas 4. El tercer quadrat complet serà la tapa posterior.</li>
+                <li>Pas 5. Retallar una quarta peça de cartó en forma de trapezi que serà la base de suport.</li>
+                <li>Pas 6. Enganxar els 3 quadrats sobreposats amb cola (quadrat complet darrere, peça en forma de “U” al mig i quadrat amb finestra davant).</li>
+                <li>Pas 7. Decorar el marc emprant la tècnica desitjada (pintat, amb boletes de paper de seda encolades, enganxant papers de colors en forma de trencadís, tallant rodanxes de tap de suro i enganxant-les, etc.).</li>
+                <li>Pas 8. Enganxar la peça posterior en forma de trapezi.</li>
+                <li>Pas 9. Recollir l'espai i els materials.</li>
+                <li>Pas 10. Quan estigui tot sec, inserir-hi la fotografia.</li>
+            </ul></td>
+            <td>Controlar que ningú es faigui mal, ajudar si ho necessiten i dinamitzar el taller.</td>
+        </tr>
+<script>
+        function filtrarTaula() {
+          const input = document.getElementById("buscador");
+          const filtre = input.value.toLowerCase();
+          const taula = document.getElementById("taula");
+          const files = taula.getElementsByTagName("tr");
+        
+          for (let i = 1; i < files.length; i++) {
+            const cel·les = files[i].getElementsByTagName("td");
+            let mostra = false;
+        
+            for (let j = 0; j < cel·les.length; j++) {
+              if (cel·les[j]) {
+                const txt = cel·les[j].textContent || cel·les[j].innerText;
+                if (txt.toLowerCase().indexOf(filtre) > -1) {
+                  mostra = true;
+                  break;
+                }
+              }
+            }
+        
+            files[i].style.display = mostra ? "" : "none";
+          }
+        }
+        </script>
+    </table>
+</body>
+</html>

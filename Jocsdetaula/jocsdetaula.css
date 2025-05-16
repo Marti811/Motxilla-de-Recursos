@@ -1,0 +1,68 @@
+body {
+    background-color: beige;
+}
+
+#tit {
+    color: rgb(245, 167, 50);
+    text-align: center;
+    margin-top: -60px;
+}
+
+header {
+    background-color: rgb(78, 159, 189);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: 1000;
+}
+
+#white {
+    color: rgb(78, 159, 189);
+    text-align: center;
+}
+
+#menuprincipal {
+    background-color: rgb(78, 159, 189);
+    color: rgb(245, 167, 50);
+    border: 2px solid rgb(37, 169, 240);
+    margin: 20px;
+    padding: 20px;
+}
+
+/* ✅ Només afectem el menú de navegació */
+#menuprincipal {
+    background-color: rgb(78, 159, 189);
+    color: rgb(245, 167, 50);
+    border: 2px solid rgb(37, 169, 240);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu-item a {
+    color: rgb(245, 167, 50);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* ✅ Estils per a la resta de llistes (fora del nav) */
+body > ul,
+body > div > ul,
+body h2 + ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    display: block;
+    margin-left: 30px;
+}
+
+body li {
+    display: list-item;
+    margin: 5px 0;
+}
